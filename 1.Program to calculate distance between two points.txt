@@ -1,0 +1,29 @@
+Program to calculate distance between two points
+
+You are given two co-ordinates (x1, y1) and (x2, y2) of a two dimensional graph. Find the distance between them.
+
+Examples: 
+ 
+
+Input : x1, y1 = (3, 4)
+        x2, y2 = (7, 7)
+Output : 5
+
+Input : x1, y1 = (3, 4) 
+        x2, y2 = (4, 3)
+Output : 1.41421
+
+
+// Function to calculate distance
+
+function distance(x1, y1, x2,  y2)
+{
+    // Calculating distance
+
+    return Math.sqrt(Math.pow(x2 - x1, 2) +
+                Math.pow(y2 - y1, 2));
+}
+ 
+// Function run 
+
+distance(3, 4, 4, 3) // Output : 1.41421
