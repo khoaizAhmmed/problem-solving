@@ -16,7 +16,13 @@ var runningSum = function(nums) {
   let result = []
    result[0] = nums[0]
   for(var i = 1;i<nums.length;i++){
-      console.log(nums[i])
+      result[i] = nums[i] + result[i-1] 
   }
+  return result
 };
 
+
+const arr = [1,2,3,4]
+
+
+console.log(runningSum(arr))
